@@ -1,15 +1,8 @@
-# Update the apt package list.
-sudo apt-get update -y
+# Distribution: WSL Ubuntu 20.04 
 
-# Install Docker's package dependencies.
-sudo apt-get install -y \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    software-properties-common \
-    python3 \
-    python3-pip
-
+# Due to a bug in WSL Ubuntu 20.04:
+#    https://github.com/MicrosoftDocs/WSL/issues/662
+# Installation will done manually
 # Install docker engine binaries
 wget https://download.docker.com/linux/static/stable/x86_64/docker-19.03.8.tgz 
 tar xzvf docker-19.03.8.tgz

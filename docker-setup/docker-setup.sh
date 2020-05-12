@@ -1,17 +1,9 @@
-# Update the apt package list.
-sudo apt-get update -y
+# Distribution: WSL Ubuntu 18.04
 
-# Install Docker's package dependencies.
-sudo apt-get install -y \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    software-properties-common \
-    python3 \
-    python3-pip
+# Execute newMachine-setup.sh before this script
 
 # Download and add Docker's official public PGP key.
-# Due to a WSL bug, you might not be able to add the docker repo to ubuntu apt repo due to this error:
+# Due to a "WSL Ubuntu 20.04" bug, you might not be able to add the docker repo to ubuntu apt repo due to this error:
 #   gpg: can't connect to the agent: IPC connect call failed
 # See "docker-WSL-setup.sh" for alternative setup
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
