@@ -1,1 +1,29 @@
 # A collection of installation scripts for me to reference when I need to reinstall something
+
+## Setup
+1. Execute the following on a new debian-based Linux OS
+```
+./first-time-setup/newMachine-setup.sh
+```
+2. Then, execute the following to generate an ssh key
+```
+./first-time-setup/ssh-setup.sh
+
+# Adding an ssh key to github: https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
+```
+3. Then,execute the following to generate a gpg key
+```
+gpg2 --full-generate-key
+
+# Full gpg setup guide avalaible: https://help.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key
+# Adding gpg key to github: https://help.github.com/en/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account
+```
+4. Once, you are done, execute the following to setup your git configuration
+```
+./first-time-setup/git-setup.sh [arg1=YourName] [arg2=Email] [arg3=GPGKey]
+```
+5. If you want to use docker in your workflow, then execute
+```
+# For Ubuntu and debian-based Linux distribution
+./docker-setup/docker-setup.sh
+```
