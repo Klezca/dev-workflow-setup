@@ -31,3 +31,6 @@ sudo usermod -aG docker $USER
 
 # Install Docker Compose into your user's home directory.
 pip3 install --user docker-compose
+
+# Allow Docker Client on WSL to access Docker Host running on Windows.
+echo "export DOCKER_HOST=tcp://localhost:2375" >> ~/.bashrc && source ~/.bashrc
