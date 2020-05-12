@@ -26,4 +26,10 @@ gpg2 --full-generate-key
 ```
 # For Ubuntu and debian-based Linux distribution
 ./docker-setup/docker-setup.sh
+
+# Copy and paste the contents from docker-setup/wsl.conf
+sudo vi /etc/wsl.conf
+
+# Append the contents from docker-setup/.profile
+sudo vi ~/.profile
 ```
