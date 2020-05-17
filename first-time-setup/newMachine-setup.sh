@@ -18,6 +18,7 @@ sudo apt-get -y install \
     software-properties-common \
     build-essential \
     git \
+    git-flow \
     gnupg2
 
 # Install node and npm
