@@ -17,7 +17,6 @@ sudo apt-get -y install \
     curl \
     software-properties-common \
     build-essential \
-    git \
     git-flow \
     gnupg2
 
