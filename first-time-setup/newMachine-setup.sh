@@ -1,8 +1,9 @@
 # Setup Script to be executed every time I work on a new machine
 # Distribution: WSL Ubuntu 18.04
 
-# Add python repo to system repo
-yes " " | sudo add-apt-repository ppa:deadsnakes/ppa 
+# Add python and ansible repo to system repo
+sudo apt-add-repository --yes --update ppa:deadsnakes/ppa 
+sudo apt-add-repository --yes --update ppa:ansible/ansible
 
 # Add node repo to system repo
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
