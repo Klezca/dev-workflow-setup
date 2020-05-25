@@ -19,7 +19,8 @@ sudo apt-get -y install \
     software-properties-common \
     build-essential \
     git-flow \
-    gnupg2
+    gnupg2 \
+    ansible
 
 # Install node and npm
 sudo apt-get install -y nodejs
