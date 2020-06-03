@@ -54,5 +54,6 @@ git config --global --list
 sudo vi /etc/wsl.conf
 
 # Append the contents from docker-setup/.profile
-cat docker-setup/.profile >> es.txt
+cat docker-setup/.profile >> ~/.profile
+
 ```
