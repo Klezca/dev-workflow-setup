@@ -24,7 +24,7 @@ sudo add-apt-repository \
 sudo apt-get update -y
 
 # Install the latest version of Docker CE.
-sudo apt-get install -y docker-ce 
+sudo apt-get install -y docker-ce
 
 # Allow your user to access the Docker CLI without needing root access.
 sudo usermod -aG docker $USER
