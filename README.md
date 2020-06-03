@@ -25,13 +25,19 @@ gpg2 --full-generate-key
 # Adding gpg key to github: https://help.github.com/en/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account
 ```
 
-4. Once, you are done, execute the following to setup your git configuration
+4. Once, you are done, set your env config, then run
 
 ```
-./first-time-setup/git-setup.sh [arg1=YourName] [arg2=Email] [arg3=GPGKey]
+export $(xargs < example.env)
 ```
 
-5. If you want to use docker in your workflow, then execute
+5. execute the following to setup your git configuration
+
+```
+./first-time-setup/git-setup.sh
+```
+
+6. If you want to use docker in your workflow, then execute
 
 ```
 # For Ubuntu and debian-based Linux distribution
