@@ -34,8 +34,8 @@ sudo apt-get -y install \
     python3.8-venv \
     python3-pip
 
-# Install aws cli v2
+# # Install aws cli v2
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
+sudo unzip awscliv2.zip
 sudo ./aws/install
 rm -rf aws awscliv2.zip

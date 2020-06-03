@@ -28,13 +28,20 @@ gpg2 --full-generate-key
 4. Once, you are done, set your env config, then run
 
 ```
-export $(xargs < example.env)
+# Create a new copy of the env file
+cp .env.example .env
+
+# Export env variables from env file
+export $(xargs < .env)
 ```
 
 5. execute the following to setup your git configuration
 
 ```
 ./first-time-setup/git-setup.sh
+
+# Test script by running
+git config --global --list
 ```
 
 6. If you want to use docker in your workflow, then execute
