@@ -44,10 +44,10 @@ export $(xargs < .env)
 git config --global --list
 ```
 
-6. If you want to use docker in your workflow, then execute
+6. If you are using WSL and you want to use docker in your workflow, then execute
 
 ```
-# For Ubuntu and debian-based Linux distribution
+# Install docker community edition in ubuntu
 ./docker-setup/docker-setup.sh
 
 # Copy and paste the contents from docker-setup/wsl.conf
