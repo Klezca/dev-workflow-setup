@@ -28,11 +28,12 @@ sudo apt-get -y install \
 sudo apt-get install -y nodejs
 sudo apt install node
 
-# Install python3.8 and pip3
+# Install python3.8 and pip3 and Python headers
 sudo apt-get -y install \
     python3.8 \
     python3.8-venv \
-    python3-pip
+    python3-pip \
+    python3.8-dev
 
 # # Install aws cli v2
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
