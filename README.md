@@ -56,4 +56,8 @@ sudo vi /etc/wsl.conf
 # Append the contents from docker-setup/.profile
 cat docker-setup/.profile >> ~/.profile
 
+# Follow the rest of the guide to setup docker in WSL
+# https://medium.com/faun/docker-running-seamlessly-in-windows-subsystem-linux-6ef8412377aa
+
+# Continue starting from "Starting Docker’s Service with Windows 🚀"
 ```
