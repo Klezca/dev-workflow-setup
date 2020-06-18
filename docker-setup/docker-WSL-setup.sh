@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Distribution: WSL Ubuntu 20.04
 
 # Due to a bug in WSL Ubuntu 20.04:
