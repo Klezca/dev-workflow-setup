@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Scripts to ensure ssh agent is running
 eval $(ssh-agent -s)
 

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Distribution: WSL Ubuntu 18.04
 
 # Execute newMachine-setup.sh before this script

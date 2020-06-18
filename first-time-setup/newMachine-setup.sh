@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Setup Script to be executed every time I work on a new machine
 # Distribution: WSL Ubuntu 18.04
 
