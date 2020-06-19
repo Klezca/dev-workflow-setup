@@ -24,6 +24,10 @@ cat /home/$USER/.ssh/id_rsa.pub
 ```bash
 gpg2 --full-generate-key
 
+# Back up the keypair and store it in a safe place.
+gpg --export-secret-keys --armor <fingerprint> > privatekey.asc
+gpg --export --armor <fingerprint> > pubkey.asc
+
 # Full gpg setup guide avalaible: https://help.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key
 
 # Adding gpg key to github: https://help.github.com/en/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account
