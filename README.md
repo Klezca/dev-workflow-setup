@@ -70,6 +70,9 @@ git config --global --list
 # Copy and paste the contents from docker-setup/wsl.conf
 sudo vi /etc/wsl.conf
 
+# Test wsl.conf is working (restart required)
+mount -l | grep drvfs
+
 # Append the contents from docker-setup/.profile
 cat docker-setup/.profile >> ~/.profile
 
