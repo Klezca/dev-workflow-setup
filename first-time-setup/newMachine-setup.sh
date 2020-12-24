@@ -57,6 +57,11 @@ sudo apt-get install php-pear \
     php-xml \
     libapache2-mod-php
 
+# Install Composer Package Manager for PHP
+wget -O composer-setup.php https://getcomposer.org/installer
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+rm -rf composer-setup.php
+
 # Install aws cli v2
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 sudo unzip awscliv2.zip
