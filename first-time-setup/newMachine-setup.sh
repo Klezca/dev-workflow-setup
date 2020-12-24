@@ -24,6 +24,7 @@ sudo apt-get -y install \
     build-essential \
     git-flow \
     git \
+    wget \
     gnupg2 \
     ansible \
     php
