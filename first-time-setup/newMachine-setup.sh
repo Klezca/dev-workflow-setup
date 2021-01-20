@@ -27,7 +27,8 @@ sudo apt-get -y install \
     wget \
     gnupg2 \
     ansible \
-    php
+    php \
+    openjdk-14-jre-headless    
 
 # Update System
 sudo apt-get -y update && sudo apt-get -y upgrade
