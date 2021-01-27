@@ -5,13 +5,19 @@
 
 # Add python and ansible repo to system repo
 sudo apt-add-repository --yes --update ppa:deadsnakes/ppa
-sudo apt-add-repository --yes --update ppa:ansible/ansible
+# sudo apt-add-repository --yes --update ppa:ansible/ansible
 
-# Add node repo to system repo
-curl -sL https://deb.nodesource.com/setup_15.x | sudo -E bash -
+# Add the Google Cloud SDK distribution URI as a package source: 
+echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+
+# Import the Google Cloud public key:  
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
 
 # Add yarn package manager to system repo
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+
+# Update System
+sudo apt-get -y update && sudo apt-get -y upgrade
 
 # Install essential dependencies
 sudo apt-get -y install \
@@ -25,18 +31,17 @@ sudo apt-get -y install \
     git-flow \
     git \
     wget \
-    gnupg2 \
-    ansible \
+    gnupg \
     php \
-    openjdk-14-jre-headless    
+    openjdk-14-jre-headless \
+    google-cloud-sdk
+
 
 # Update System
 sudo apt-get -y update && sudo apt-get -y upgrade
 
-# Install node, npm and yarn
-sudo apt-get install -y nodejs
-sudo apt install node
-sudo apt install yarn
+# Install Node Version Manager (NVM)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
 # Install python3.9 and pip3 and Python headers
 sudo apt-get -y install \
@@ -69,3 +74,9 @@ sudo unzip awscliv2.zip
 sudo ./aws/install
 rm -rf aws awscliv2.zip
 
+# Install node, npm and yarn
+sudo apt install yarn
+nvm install v14.15.4 # Required Reboot
+
+# Updates system (required reboot)
+#   apt-get dist-upgrade
