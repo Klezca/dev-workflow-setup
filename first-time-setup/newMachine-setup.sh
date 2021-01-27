@@ -36,8 +36,7 @@ sudo apt-get -y install \
     openjdk-14-jre-headless \
     google-cloud-sdk
 
-
-# Update System
+# Update all newly installed system packages
 sudo apt-get -y update && sudo apt-get -y upgrade
 
 # Install Node Version Manager (NVM)
